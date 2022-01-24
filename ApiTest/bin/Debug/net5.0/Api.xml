@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.ProductController.GetProducts(Api.Filter.PaginationFilter)">
+            <summary>
+            Returns page of product
+            </summary>
+            <param name="filter">Page Filter</param>
+            <returns>Paged Response List of product</returns>
+        </member>
+        <member name="M:Api.Controllers.ProductController.GetProductById(System.Int64)">
+            <summary>
+            Get Product by id
+            </summary>
+            <param name="id">Id of product we would like to get</param>
+            <returns>Product json</returns>
+        </member>
+        <member name="M:Api.Controllers.ProductController.InsertProduct(Api.Models.Product)">
+            <summary>
+            Add new product to database
+            </summary>
+            <param name="product">Product json</param>
+            <returns>Added product json</returns>
+        </member>
+        <member name="M:Api.Controllers.ProductController.UpdateProductDescription(System.Int64,System.String)">
+            <summary>
+            Update description of product
+            </summary>
+            <param name="Id">Product id you want to update</param>
+            <param name="description">New description</param>
+            <returns>Updated product json</returns>
+        </member>
+    </members>
+</doc>
